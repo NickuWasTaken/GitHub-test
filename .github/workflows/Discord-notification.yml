@@ -1,4 +1,4 @@
-name: discord-notification
+name: discord message
 on: [push]
 jobs:
 
@@ -12,3 +12,4 @@ jobs:
       with:
         webhook_id: ${{ secrets.WEBHOOK_ID }}
         webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+        args: The ${{ github.event_name }} event triggered first step.
