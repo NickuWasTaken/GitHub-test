@@ -1,4 +1,4 @@
-name: Discord-notification
+name: discord-notification
 on: [push]
 jobs:
 
